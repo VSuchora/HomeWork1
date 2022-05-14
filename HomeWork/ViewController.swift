@@ -41,5 +41,5 @@ class ViewController: UIViewController {
             print("Odd number")
         }
     }
-    
+    // что происходит с GIT'ом?
 }
