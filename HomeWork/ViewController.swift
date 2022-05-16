@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     func divide(_ a: Double,_ b: Double,_ c: Double) {
         print(a/b/c)
     }
-    
+}
     class pervy{
         static func abv(_ a: String,_ b: String){
             if a > b{
@@ -93,4 +93,4 @@ class ViewController: UIViewController {
         }
     }
     // Второе скопировал у человека - у которого всё якобы правильно. Не понимаю, почему не выда>т одно итоговое значение. Тяжко с этим. Надо дорабоать
-}
+
