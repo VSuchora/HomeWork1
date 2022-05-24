@@ -16,6 +16,8 @@
 		7D07F44B2827C0BD00568314 /* HomeWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07F44A2827C0BD00568314 /* HomeWorkTests.swift */; };
 		7D07F4552827C0BD00568314 /* HomeWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07F4542827C0BD00568314 /* HomeWorkUITests.swift */; };
 		7D07F4572827C0BD00568314 /* HomeWorkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D07F4562827C0BD00568314 /* HomeWorkUITestsLaunchTests.swift */; };
+		7DDA736E283D5DD200D694CB /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDA736D283D5DD200D694CB /* Beer.swift */; };
+		7DDA7370283D64E000D694CB /* BeerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDA736F283D64E000D694CB /* BeerManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7D07F4502827C0BD00568314 /* HomeWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D07F4542827C0BD00568314 /* HomeWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkUITests.swift; sourceTree = "<group>"; };
 		7D07F4562827C0BD00568314 /* HomeWorkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7DDA736D283D5DD200D694CB /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		7DDA736F283D64E000D694CB /* BeerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				7D07F43C2827C0BC00568314 /* Assets.xcassets */,
 				7D07F43E2827C0BC00568314 /* LaunchScreen.storyboard */,
 				7D07F4412827C0BC00568314 /* Info.plist */,
+				7DDA736D283D5DD200D694CB /* Beer.swift */,
+				7DDA736F283D64E000D694CB /* BeerManager.swift */,
 			);
 			path = HomeWork;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 				7D07F4382827C0B800568314 /* ViewController.swift in Sources */,
 				7D07F4342827C0B800568314 /* AppDelegate.swift in Sources */,
 				7D07F4362827C0B800568314 /* SceneDelegate.swift in Sources */,
+				7DDA7370283D64E000D694CB /* BeerManager.swift in Sources */,
+				7DDA736E283D5DD200D694CB /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
