@@ -1,4 +1,5 @@
 
+
 //  ViewController.swift
 //  HomeWork
 //
@@ -9,43 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var beerButton: UIButton!
-    @IBOutlet weak var intro: UILabel!
-    @IBOutlet weak var enddayButton: UIButton!
-    @IBOutlet weak var newdayButton: UIButton!
+    let Toyforcat = UIView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        BeerManager.shared.connecttobeer()
+        Toyforcat.backgroundColor = .black
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        intro.text = "Welcome To Bar"
-        intro.textAlignment = .center
-        intro.font = UIFont.systemFont(ofSize: 33, weight: UIFont.Weight.heavy)
-        beerButton.setTitle("Sell Beer", for: .normal)
-        beerButton.setTitle("Sell More Beer", for: .selected)
-        beerButton.setTitleColor(.green, for: .selected)
-        enddayButton.setTitle("Close The Day", for: .normal)
-        newdayButton.setTitle("Start A New Day", for: .normal)
-    }
-    @IBAction func dobeer(_ sender: Any) {
-        beerButton.isSelected = !beerButton.isSelected
-        BeerManager.shared.connecttobeer()
-    }
-    @IBAction func doendday(_ sender: Any) {
+        let centerX = view.frame.midX
+        let centerY = view.frame.midY
         
-        intro.text = """
- \(BeerManager.shared.getbeercount()) bottles of beer were sold
- Profit amounted to \(BeerManager.shared.profit())$
- """
-        intro.font = UIFont.systemFont(ofSize: 26, weight: UIFont.Weight.thin)
+        Toyforcat.frame = CGRect(x: centerX - 180/2, y: centerY - 180/2, width: 180, height: 180)
+        Toyforcat.layer.cornerRadius = 90
+        view.addSubview(Toyforcat)
+        Toyforcat.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(justtap)))
     }
-    @IBAction func donewdayButton(_ sender: Any) {
-        intro.text = """
-        The remaining stock is \(BeerManager.shared.allremains()).
-        Profit at the beginning of the day \(BeerManager.shared.newsellday())
-        """
-        intro.font = UIFont.systemFont(ofSize: 21, weight: UIFont.Weight.light)
+    @objc func justtap() {
+        ChangeColorAndPlace()
+    }
+    func ChangeColorAndPlace() {
+        Toyforcat.backgroundColor = UIColor(red:.random(in: 0...1), green:.random(in: 0...1), blue:.random(in: 0...1), alpha: 1)
+        Toyforcat.frame = CGRect(x: .random(in: 0...view.frame.maxX - Toyforcat.frame.width), y: .random(in: 0...view.frame.maxY - Toyforcat.frame.height), width: 180, height: 180)
     }
 }
 
